@@ -1,0 +1,21 @@
+
+  Dropping all tables ........................................... 31.49ms DONE
+
+   INFO  Preparing database.  
+
+  Creating migration table ...................................... 15.62ms DONE
+
+   INFO  Running migrations.  
+
+  2024_01_01_000001_create_users_table .......................... 54.56ms DONE
+  2024_01_01_000002_create_universities_table .................... 8.47ms DONE
+  2024_01_01_000003_create_programs_table ....................... 10.70ms DONE
+  2024_01_01_000004_create_scholarships_table .................... 8.64ms DONE
+  2024_01_01_000005_create_applications_table ................... 26.47ms DONE
+  2024_01_01_000006_create_recommendations_table ................. 8.68ms DONE
+  2024_01_02_000001_add_region_to_universities .................. 19.93ms DONE
+  2024_01_02_000002_add_subscription_system ..................... 46.24ms DONE
+
+
+   INFO  Seeding database.  
+
