@@ -4,13 +4,14 @@ services:
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
+    preDeployCommand: php artisan migrate --force
     envVars:
       - key: APP_ENV
         value: production
       - key: APP_KEY
-        generateValue: true
+        value: base64:8vK9mP2qR5tY7wX0zA3bC6dE9fG1hI4jK7lM0nO3pQ=
       - key: APP_DEBUG
-        value: false
+        value: true
       - key: LOG_CHANNEL
         value: stack
       - key: DB_CONNECTION
@@ -39,6 +40,8 @@ services:
         fromDatabase:
           name: scholarify-db
           property: connectionString
+      - key: SESSION_DRIVER
+        value: database
 
 databases:
   - name: scholarify-db
